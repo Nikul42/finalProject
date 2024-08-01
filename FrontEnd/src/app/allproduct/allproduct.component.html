@@ -1,0 +1,10 @@
+<app-header></app-header>
+
+<div class="card" *ngFor="let item of Products">
+    <img class="image" src="../../assets/{{item.imgURL}}" alt="Avatar">
+    <div class="container">
+      <h4><b>{{item.name}}</b></h4> 
+      <p>${{item.price}}</p> 
+      <button (click)="addToCart(item)">Add To Cart</button>
+    </div>
+  </div>
